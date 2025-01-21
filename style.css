@@ -1,0 +1,49 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #650b0b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Contêiner dos vídeos */
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que os vídeos "quebrem" para a linha seguinte se o espaço acabar */
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* Estilo para os vídeos */
+.video-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para os vídeos embutidos */
+.video-item iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+}
