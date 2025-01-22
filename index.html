@@ -7,6 +7,68 @@
     <meta name="author" content="Seu Nome">
     <title>Site com 10 Vídeos e Efeitos</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo básico */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .video-item {
+            position: relative;
+            margin: 15px;
+            width: 320px;
+            height: 180px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilo do botão */
+        .video-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .video-item:hover .video-button {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-button:focus {
+            outline: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,39 +81,47 @@
             <!-- Vídeos -->
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/4iKtTmnHojU" title="Vídeo 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
-
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/9H195BElHZ4" title="Vídeo 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/MXJtW1P3Ae8" title="Vídeo 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/5Zj9aef2AEE" title="Vídeo 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/IwRZP9V-gYE" title="Vídeo 6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/QKn5RJU11iI" title="Vídeo 7" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/H7plhchiJeU" title="Vídeo 8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/5QF4QRcyjxE" title="Vídeo 9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
 
             <article class="video-item">
                 <iframe src="https://www.youtube.com/embed/UFmIONjpXTg" title="Vídeo 10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="video-button">Assistir</button>
             </article>
         </section>
     </main>
